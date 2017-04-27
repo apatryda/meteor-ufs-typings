@@ -5,6 +5,5 @@
   "globalDependencies": {
     "meteor": "registry:dt/meteor#1.4.0+20170308162720",
     "node": "registry:dt/node#4.0.0+20160725215103"
-  },
-  "global": true
+  }
 }
