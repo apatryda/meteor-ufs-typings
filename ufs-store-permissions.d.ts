@@ -1,3 +1,14 @@
+/**
+ * Store permissions
+ */
+export var StorePermissions: StorePermissionsStatic;
+
+interface StorePermissionsStatic {
+  constructor(
+    options: StorePermissionsOptions
+  ): StorePermissions;
+}
+
 type StorePermissionsPermissionFunction = (
   userId: string,
   file,
@@ -11,10 +22,7 @@ interface StorePermissionsOptions {
   update?: StorePermissionsPermissionFunction;
 }
 
-/**
- * Store permissions
- */
-export class StorePermissions {
+interface StorePermissions {
 
   actions: {
     insert: StorePermissionsPermissionFunction;
@@ -22,9 +30,6 @@ export class StorePermissions {
     update: StorePermissionsPermissionFunction;
   };
 
-  constructor(
-    options: StorePermissionsOptions
-  );
 
   /**
    * Checks the permission for the action

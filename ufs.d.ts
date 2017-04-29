@@ -1,17 +1,17 @@
 import { Config, ConfigStatic } from './ufs-config';
-import { Filter } from './ufs-filter';
-import { Store } from './ufs-store';
-import { StorePermissions } from './ufs-store-permissions';
-import { Uploader } from './ufs-uploader';
-
-// type ConfigClass = typeof Config;
-// type FilterClass = typeof Filter;
-// type StoreClass = typeof Store;
-// type StorePermissionsClass = typeof StorePermissions;
-// type UploaderClass = typeof Uploader;
+import { Filter, FilterStatic } from './ufs-filter';
+import { Store, StoreStatic } from './ufs-store';
+import { StorePermissions, StorePermissionsStatic } from './ufs-store-permissions';
+import { Uploader, UploaderStatic } from './ufs-uploader';
 
 export var UploadFS;
 interface UploadFS {
+
+  Config: ConfigStatic;
+  Filter: FilterStatic;
+  Store: StoreStatic;
+  StorePermissions: StorePermissionsStatic;
+  Uploader: UploaderStatic;
 
   /**
    * UploadFS Configuration
@@ -156,13 +156,5 @@ interface UploadFS {
   selectFiles(
     callback: Function
   ): void;
-
-  // const Config: ConfigClass;
-  // const Filter: FilterClass;
-  // const Store: StoreClass;
-  // const StorePermissions: StorePermissionsClass;
-  // const Uploader: UploaderClass;
-
-  Config: ConfigStatic;
 
 }

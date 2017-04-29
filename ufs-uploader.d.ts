@@ -1,5 +1,10 @@
 import { Store } from './ufs-store';
 
+/**
+ * File uploader
+ */
+export var Uploader: UploaderStatic;
+
 interface UploaderOptions {
   adaptive?: boolean;
   capacity?: number;
@@ -20,10 +25,13 @@ interface UploaderOptions {
   transferDelay?: number;
 }
 
-/**
- * File uploader
- */
-export class Uploader {
+interface UploaderStatic {
+  new (
+    options: UploaderOptions
+  ): Uploader;
+}
+
+interface Uploader {
 
   adaptive: boolean;
   capacity: number;
@@ -33,9 +41,6 @@ export class Uploader {
   retryDelay: number;
   transferDelay: number;
 
-  constructor(
-    options: UploaderOptions
-  );
 
   /**
    * Aborts the current transfer

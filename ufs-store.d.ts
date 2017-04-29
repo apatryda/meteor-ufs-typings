@@ -3,6 +3,11 @@ import { Readable, Writable } from 'stream';
 import { Filter } from './ufs-filter';
 import { StorePermissions } from './ufs-store-permissions';
 
+/**
+ * File store
+ */
+export var store: StoreStatic;
+
 interface StoreOptions {
   collection?: Mongo.Collection<any>;
   filter?: Filter;
@@ -18,14 +23,13 @@ interface StoreOptions {
   transformWrite: Function;
 }
 
-/**
- * File store
- */
-export class Store {
+interface StoreStatic {
+  new (
+    options: StoreOptions
+  ): Store;
+}
 
-  constructor(
-    options: {}
-  );
+interface Store {
 
   /**
    * Deletes a file async

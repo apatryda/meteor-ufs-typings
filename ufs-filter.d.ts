@@ -1,3 +1,8 @@
+/**
+ * File filter
+ */
+export var Filter: FilterStatic;
+
 interface FilterOptions {
   contentTypes?: string[];
   extensions?: string[];
@@ -6,10 +11,13 @@ interface FilterOptions {
   onCheck?: Function;
 }
 
-/**
- * File filter
- */
-export class Filter {
+interface FilterStatic {
+  new (
+    options: FilterOptions
+  ): Filter;
+}
+
+interface Filter {
 
   constructor(
     options: FilterOptions
