@@ -1,6 +1,6 @@
 {
   "name": "meteor/jalik:ufs",
-  "main": "main.d.ts",
+  "main": "ufs.d.ts",
   "dependencies": {},
   "globalDependencies": {
     "meteor": "registry:dt/meteor#1.4.0+20170308162720",

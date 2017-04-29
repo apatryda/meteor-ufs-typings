@@ -15,7 +15,5 @@
   "bugs": {
     "url": "https://github.com/apatryda/meteor-ufs-typings/issues"
   },
-  "homepage": "https://github.com/apatryda/meteor-ufs-typings#readme",
-  "devDependencies": {
-  }
+  "homepage": "https://github.com/apatryda/meteor-ufs-typings#readme"
 }
