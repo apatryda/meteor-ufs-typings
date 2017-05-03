@@ -18,9 +18,9 @@ interface StoreOptions {
   onReadError?: Function;
   onValidate?: Function;
   onWriteError?: Function;
-  permissions: StorePermissions;
-  transformRead: Function;
-  transformWrite: Function;
+  permissions?: StorePermissions;
+  transformRead?: Function;
+  transformWrite?: Function;
 }
 
 interface StoreStatic {
