@@ -23,7 +23,7 @@ interface UploadFS {
    * Contains all stores
    */
   store: {
-    [name: string]: Store;
+    [name: string]: StoreStatic;
   };
 
     /**

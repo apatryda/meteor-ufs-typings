@@ -6,7 +6,7 @@ import { StorePermissions } from './ufs-store-permissions';
 /**
  * File store
  */
-export var store: StoreStatic;
+export var Store: StoreStatic;
 
 interface StoreOptions {
   collection?: Mongo.Collection<any>;
