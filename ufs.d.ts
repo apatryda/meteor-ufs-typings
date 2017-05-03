@@ -4,7 +4,7 @@ import { Store, StoreStatic } from './ufs-store';
 import { StorePermissions, StorePermissionsStatic } from './ufs-store-permissions';
 import { Uploader, UploaderStatic } from './ufs-uploader';
 
-export var UploadFS;
+export var UploadFS: UploadFS;
 interface UploadFS {
 
   Config: ConfigStatic;
