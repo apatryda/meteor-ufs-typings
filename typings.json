@@ -1,5 +1,6 @@
 {
   "name": "meteor/jalik:ufs",
+  "version": "0.0.3",
   "main": "ufs.d.ts",
   "dependencies": {},
   "globalDependencies": {
