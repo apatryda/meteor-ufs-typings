@@ -4,7 +4,7 @@
 export var StorePermissions: StorePermissionsStatic;
 
 interface StorePermissionsStatic {
-  constructor(
+  new (
     options: StorePermissionsOptions
   ): StorePermissions;
 }
