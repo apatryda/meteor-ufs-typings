@@ -1,6 +1,6 @@
 {
   "name": "meteor-ufs-typings",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "",
   "main": "ufs.d.ts",
   "scripts": {
@@ -11,9 +11,13 @@
     "url": "git+https://github.com/apatryda/meteor-ufs-typings.git"
   },
   "author": "Artur Nerkowski",
-  "license": "Unlicense",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/apatryda/meteor-ufs-typings/issues"
   },
-  "homepage": "https://github.com/apatryda/meteor-ufs-typings#readme"
+  "homepage": "https://github.com/apatryda/meteor-ufs-typings#readme",
+  "devDependencies": {
+    "@types/meteor": "^1.4.34",
+    "@types/node": "^10.14.22"
+  }
 }
